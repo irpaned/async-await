@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+</head>
+<body>
+
+    <nav>
+        <div class="nav-left">
+            <ul>
+                <li>
+                    <a href="">
+                        <img src="assets/img/dumbways.png" alt="Logo DumbWays">
+                    </a>
+                </li>
+                <li ><a href="" class="home">Home</a></li>
+                <li ><a href="detailProject.html" class="myProject">My Project</a></li>
+                <li><a href="" class="myTestimonial">My Testimonials</a></li>
+            </ul>
+        </div>
+        <div class="nav-right">
+            <ul>
+                <li>
+                    <button class="firstButton">
+                        <a href="https://api.whatsapp.com/send/?phone=6285866447475&text&type=phone_number&app_absent=0"      target="_blank">Contact Me</a>
+                    </button>
+                </li>
+                <li>
+                    <button class="secondButton" onclick="hamburgerButton()">
+                        <i class="fa-solid fa-bars" ></i>
+                    </button>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <div class="hamburgerButton hide">
+        <a href="">Home</a>
+        <a href="">My Project</a>
+        <a class="nav-active" href="">My Testimonials</a>
+        <a href=""><button>Contact Me</button></a>
+        
+    </div>
+
+
+
+    <div class="container">
+
+        <div class="judul">
+            <h1>My Testimonials</h1>
+        </div>
+
+        <div class="containerRating">
+            <button class="buttonRating" onclick="allTestimonial()">All</button>
+            <button onclick="filterTestimonial(1)" class="buttonRating">1 <i class="fa-solid fa-star"></i></button>
+            <button onclick="filterTestimonial(2)" class="buttonRating">2 <i class="fa-solid fa-star"></i></button>
+            <button onclick="filterTestimonial(3)" class="buttonRating">3 <i class="fa-solid fa-star"></i></button>
+            <button onclick="filterTestimonial(4)" class="buttonRating">4 <i class="fa-solid fa-star"></i></button>
+            <button onclick="filterTestimonial(5)" class="buttonRating">5 <i class="fa-solid fa-star"></i></button>
+        </div>
+
+
+        <div class="myTestimonials" id="myTestimonials">
+            <div class="card">
+                <div class="image">
+                    <img src="https://images.pexels.com/photos/1139743/pexels-photo-1139743.jpeg?auto=compress&cs=tinysrgb&w=600" alt="">
+                </div>
+                <div class="quotes">
+                    <p>"Mantap sekali!"</p>
+                </div>
+                <div class="author">
+                    <h4>- Joko</h4>
+                </div>
+                <div class="rating">
+                    1 <i class="fa-solid fa-star"></i>
+                </div>
+            </div>
+            
+        </div>
+
+    </div>
+
+
+
+
+    <script src="assets/Javascript/script.js"></script>
+</body>
+</html>
